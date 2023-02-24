@@ -1,0 +1,64 @@
+#header {
+    transition: 0.5s;
+}
+
+#topbar {
+    transition: 0.5s;
+}
+
+#topbar h6 {
+    text-align: left;
+    margin-bottom: .25rem;
+    font-weight: bold;
+}
+
+#topbar svg {
+    margin-right: 1rem;
+}
+
+#header {
+    background-color: white;
+}
+
+#navbar-collapse {
+    flex-grow: 0;
+}
+
+#header-offset {
+    margin-top: 8.2rem;
+}
+
+@media only screen and (max-width: 991px) {
+    #header-offset {
+        margin-top: 3.5rem;
+    }
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #864B00;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #864B00;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav-link-active {
+    color: #864B00 !important;
+    font-weight: bold;
+}
