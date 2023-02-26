@@ -1,3 +1,15 @@
+html {
+    background-image: url('../img/background.jpg');
+}
+
+body {
+    background-color: transparent !important;
+}
+
+.ref-border{
+    border: 1px solid;
+}
+
 .headline {
     color: #864B00;
     border-left: 5px solid;
@@ -64,4 +76,8 @@
 
 body {
     color: #382000 !important;
+}
+
+.tbd-poukazy {
+    height: 100vh;
 }

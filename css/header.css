@@ -16,12 +16,12 @@
     margin-right: 1rem;
 }
 
-#header {
-    background-color: white;
-}
-
 #navbar-collapse {
     flex-grow: 0;
+}
+
+.navbar-brand img {
+    width: 100px;
 }
 
 #header-offset {
@@ -61,4 +61,12 @@
 .nav-link-active {
     color: #864B00 !important;
     font-weight: bold;
+}
+
+.nav-border-right {
+    border-right: 1px solid black;
+}
+
+.nav-border-bottom {
+    border-bottom: 1px solid black;
 }
